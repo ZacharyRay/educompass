@@ -1,0 +1,15 @@
+.header{
+  .header_container{
+    @include global_width;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "logo menu";
+
+    .header__logo{
+      grid-area: logo;
+    }
+    .header__menu{
+      grid-area: menu;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $global-font;
+  color: $black;
+  font-style: normal;
+  font-size: 1.4rem; 
+}
+
+:focus { outline: none; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 600;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  line-height: 110%;
+  @include md{  
+    font-family: $headings-font;
+  }
+}
+
+span.h1, span.h2, span.h3, span.h4, span.h5, span.h6{
+  display: inline-block;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+  
+  @include lg {
+    font-size: 6.5rem;
+    line-height: 72px;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+  @include lg {
+    font-size: 4.5rem;
+  }
+}
+
+h3, .h3 {
+  font-size: 2.4rem;
+  @include lg {
+    font-size: 3.5rem;
+  }
+}
+
+h4, .h4 {
+  font-size: 2.2rem;
+  @include lg {
+    font-size: 2.4rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 2rem;
+  @include lg {
+    font-size: 2rem;
+  }
+}
+
+h6, h6 {
+  font-size: 1.8rem;
+  @include lg {
+    font-size: 1.8rem;
+  }
+}
+
+p, span, a{
+  //line-height: 24px;
+  font-size: 1.3rem;
+}
+
+a{
+  text-decoration: none;  
+  color: $primary;
+
+  &:hover {
+    color: lighten($primary, 15%);
+  }
+
+}
+
+.button{
+ 
+  display: inline-block;
+  padding: 15px;
+  background:$primary;
+  color:$white;
+  text-transform: uppercase;
+
+  &:hover{
+    background: lighten($primary, 15%);
+  }
+  
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.firma_navn{
+  font-weight: bold;
+}
+.firma_some{
+  a{
+    font-size: 1.8rem;
+    margin-right: 15px;
+  }
+}
+
+.privatlivspolitik{
+  text-decoration: underline;
+}
+
+address{ font-style:normal;}

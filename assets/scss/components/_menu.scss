@@ -1,0 +1,36 @@
+ul.menu, ul.sub-menu{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+ul.menu--vertical{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    > li.menu-item > a{
+        display: block;
+        padding: 15px;
+    }
+
+    li.menu-item{
+        position: relative;
+
+        &:hover{
+            > ul.sub-menu{
+                display: block;
+                min-width: 100%;
+                padding-inline-start: 15px;
+            }        
+        }
+    }
+
+    ul.sub-menu{
+        display: none;
+        position:absolute;
+        top: 100%;
+    }
+}

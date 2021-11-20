@@ -1,0 +1,19 @@
+// Import scss files
+
+// settings always on top
+@import "./settings/fonts";
+@import "./settings/colors";
+@import "./settings/media-queries";
+@import "./settings/variables";
+@import "./settings/reset.scss";
+@import "./settings/mixins";
+
+// components
+@import "./components/header";  
+@import "./components/menu";  
+@import "./components/footer";
+@import "./components/burger";
+@import "./components/loop_posts";
+@import "./components/error_page";
+@import "./components/archive_page";
+@import "./components/frontpage";

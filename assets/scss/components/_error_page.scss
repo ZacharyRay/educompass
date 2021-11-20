@@ -1,0 +1,6 @@
+.error_page{
+    .container{
+        @include global_width;
+        text-align: center;
+    }
+}

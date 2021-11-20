@@ -1,0 +1,19 @@
+.footer {
+
+    .footer_container{
+        @include global_width;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "footer_1 footer_2 footer_3";
+
+        .footer__1{
+            grid-area: footer_1;
+        }
+        .footer__2{
+            grid-area: footer_2;
+        }
+        .footer__3{
+            grid-area: footer_3;
+        } 
+    }
+}

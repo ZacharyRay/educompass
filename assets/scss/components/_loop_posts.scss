@@ -1,0 +1,11 @@
+.post_list{
+    .container{
+        @include global_width;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        .loop{
+
+        }
+    }
+}
